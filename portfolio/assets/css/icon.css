@@ -14,7 +14,7 @@
     text-align: center;
     display: inline-block;
     color: #ffffff;
-    background: #000000;
+    /* background: #000000; */
     border-radius: 10px;
 
     -webkit-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
@@ -39,7 +39,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    border: 2px solid #733a3a;
+    /* border: 2px solid; */
 
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;

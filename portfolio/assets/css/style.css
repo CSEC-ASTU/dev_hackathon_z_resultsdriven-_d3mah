@@ -12,19 +12,19 @@
     IMPORT FILES
 -------------------------------------------------------------------*/
 
-@import url(css/animate.css);
-@import url(css/camera.css);
-@import url(css/flaticon.css);
-@import url(css/prettyPhoto.css);
-@import url(css/owl.carousel.css);
-@import url(css/font-awesome.min.css);
+@import url(animate.css);
+@import url(camera.css);
+@import url(flaticon.css);
+@import url(prettyPhoto.css);
+@import url(owl.carousel.css);
+@import url(font-awesome.min.css);
 
 /*------------------------------------------------------------------
     SKELETON
 -------------------------------------------------------------------*/
 
 body {
-    color: #999999;
+    color: #000000;
     font-size: 14px;
     font-family: 'Roboto Mono', monospace;
     line-height: 1.80857;
@@ -36,7 +36,7 @@ body {
 }
 
 body.demos .section {
-    background: url(images/bg.png) repeat top center #f2f3f5;
+    background: url(../images/bg.png) repeat top center gray;
 }
 
 body.demos .section-title img {
@@ -512,11 +512,11 @@ xclip
 }
 
 .section.wb {
-    background-color: rgb(236, 228, 228);
+    background-color: rgb(202, 186, 186);
 }
 
 .section.lb {
-    background-color: rgb(236, 228, 228);
+    background-color: rgb(202, 186, 186);
 }
 
 .section.db {
@@ -681,7 +681,7 @@ xclip
 
 .right-box-pro::before {
     content: "";
-    background: url(images/country-quilt-dark.png);
+    background: url(../images/country-quilt-dark.png);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -2130,7 +2130,7 @@ select.mobile-device {
 }
 
 #contact {
-    background: url(images/bg.png) no-repeat center center #333333;
+    background: url(../images/bg.png) no-repeat center center #333333;
 }
 
 
