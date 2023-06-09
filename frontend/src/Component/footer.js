@@ -1,4 +1,4 @@
-export const About = () => {
+export const Footer = () => {
   return (
     <>
       <div class="copyrights">

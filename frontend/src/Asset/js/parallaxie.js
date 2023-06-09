@@ -6,6 +6,7 @@
  *
  * Requires: jQuery 1.9+
  */
+import jQuery from "jquery";
 
 (function( $ ){
 
