@@ -1,8 +1,10 @@
 import json
 import requests
 from bs4 import BeautifulSoup
-from string import Template
+
+from app.scrape_medium import scrape_medium_user_blog 
 from .models import Stats
+ 
 
 
 def scrap_leetcode():
@@ -52,9 +54,9 @@ def scrap_kattis():
     rank = data["Rank"]
     score = data["Score"]
     Stats.objects.filter(site="kattis").update(rank=rank, score=score)
-
-
+ 
 def stat_update():
     scrap_kattis()
     scrap_codeforces()
     scrap_leetcode()
+    scrape_medium_user_blog()

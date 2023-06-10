@@ -714,10 +714,12 @@
                 </div>
               </div>
               <div class="post-info">
-                <a href="{{post.url }}"> <h4>{{ post.title }}</h4> </a>
-                <!-- <ul>
-                  <li class="text-right">Apr 21, 2018</li>
-                </ul> -->
+                <a href="https://medium.com/{{post.url }}">
+                  <h4>{{ post.title }}</h4>
+                </a>
+                <ul>
+                  <li class="text-right">{{ post.length }}</li>
+                </ul>
                 <p>{{ post.description }}</p>
               </div>
             </div>
@@ -731,9 +733,7 @@
       <div class="container">
         <div class="section-title text-left">
           <h3>Contact</h3>
-          <p>
-             Any Comment
-          </p>
+          <p>Any Comment</p>
         </div>
         <!-- end title -->
 
@@ -830,12 +830,25 @@
         <div class="footer-distributed">
           <div class="footer-left">
             <p class="footer-links">
-              <a href="#">Home</a>
-              <a href="#">Blog</a>
-              <a href="#">Pricing</a>
-              <a href="#">About</a>
-              <a href="#">Faq</a>
-              <a href="#">Contact</a>
+              <a class="nav-link js-scroll-trigger active" href="#home">Home</a>
+
+              <a href="#services">Achievements</a>
+
+              <a href="#stats">Stats</a>
+
+              <a href="#skills">Skills</a>
+
+              <a href="#Experience">Experience</a>
+
+              <a href="#Education">Education</a>
+
+              <a href="#portfolio">Portfolio</a>
+
+              <a href="#testimonials">Testimonials</a>
+
+              <a href="#blog">Blog</a>
+
+              <a href="#contact">Contact Us</a>
             </p>
             <p class="footer-company-name">
               All Rights Reserved. &copy; 2018 <a href="#">Mukerem</a> Design By

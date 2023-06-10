@@ -13,8 +13,7 @@ def home(req):
     product = list(Project.objects.all())
     blog = list(Blog.objects.all())
     stats = list(Stats.objects.all())
-    # scrape_medium_user_blog()
-    # stat_update()
+    stat_update()
     context = {
         "achivement": achivement,
         "product": product,
