@@ -1,0 +1,62 @@
+* ICPC Competitions
+    * World Final
+    * Regional
+    * National
+    * Coach of National and Regional Contest
+* Internship
+    * Scoville (AI Engineer)
+    * iCogLabs
+* Work
+    * Turing (Python Developer)
+    * Toptech (Backend Engineer)
+    * ASTU teaching assistant
+* Experience
+    * CSEC ASTU
+    * EtCPC
+* Academic
+    * CSE
+    * ECE
+    * CSE MSC (Data Science)
+* Projects
+    * Familysooq (https://familysooq.com/ )
+    * Andalus 
+    * telebirrWeb PyPI (https://pypi.org/project/telebirrweb/ and Check Github repos)
+    * EthioCalendar PyPI (https://pypi.org/project/ethiocalendar/ and Check Github repos)
+    * CS1Andalus PyPI (https://pypi.org/project/cs1andalus/ and Check Github repos)
+    * Course Audit (Check Github repos)
+    * Calendar Conversion (Check Github repos)
+    * Student Performance Prediction (Check Github repos)
+* Trainings
+    * A2SV
+    * KAIST ICPC
+    * ASTU CPD Tutorial
+    * Welkite University ICPC Training
+    * ASTU Freshman Tutorial
+* Online Platforms
+    * Kattis (https://open.kattis.com/users/mukerem )
+    * Codeforces (https://codeforces.com/profile/mukeremali )
+    * Leetcode (https://leetcode.com/mukeremali112/ )
+    * CSES (https://cses.fi/user/119282 )
+    * Project Euler (https://projecteuler.net/progress=mukerem8 )
+    * Hacker Rank (https://www.hackerrank.com/mukeremali112 )
+    * Hacker Earth (https://www.hackerearth.com/@rapi )
+    * And others Eolymp, USACO, CodeChief
+* Publication
+    * Geez Digit Recognition Using Deep Learning (https://www.hindawi.com/journals/acisc/2022/8515810/ )
+* Hall of fame
+    * https://cphof.org/profile/codeforces:mukeremali
+* Blog page
+* Tutorial or Video Pages (for tutorial, Andalus Judge, Problem Solves, …)
+* Testimonial
+* Competitions
+    * Zindi Data Science
+    * GIZ Agri Tech with IceAddis
+    * GIZ Agri competitions with ASTU EDC
+
+
+
+Resource
+* Linkedin (https://www.linkedin.com/in/mukerem-ali-7b1997147/ )
+* Github (https://github.com/mukerem )
+* CV (https://drive.google.com/file/d/1CeqK6RvgBFwDIGM1BO2bLgWTMsq0KqJg/view?usp=drive_link )
+* Project Descriptions (https://drive.google.com/file/d/1zE0yF7q10ti5ver6HeYEGXli44qTCvx9/view?usp=sharing )

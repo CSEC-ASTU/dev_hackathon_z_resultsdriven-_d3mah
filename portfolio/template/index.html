@@ -247,25 +247,25 @@
         <!-- end title -->
 
         <div class="row">
+          {% for item in achivement %}
           <div class="col-md-4">
             <div class="services-inner-box">
               <div class="ser-icon">
+                {% if item.photo %}
                 <img
-                  src="{% static 'uploads/blog-01.jpg' %}"
+                  src="{{ item.photo.url }}"
                   class="img-fluid"
                   alt="post-img"
                 />
+                {% endif %}
               </div>
-              <h2 class="text-center">Web Development</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
+              <a href="{{ item.link }}">
+                <h2 class="text-center">{{ item.title }}</h2></a
+              >
+              <p>{{ item.description|ljust:"485" }}.</p>
             </div>
           </div>
-          <!-- end col -->
-
-          <!-- end col -->
+          {% endfor %}
         </div>
         <!-- end row -->
       </div>
@@ -430,7 +430,7 @@
                 >
               </div>
               <div class="text-muted text-small mb-2">2020 - 2022</div>
-              <div>3.91</div>
+              <div>3.91<br />Specialization in Data Science</div>
             </div>
           </div>
           <div class="timeline-card timeline-card-success card shadow-sm">
@@ -461,75 +461,38 @@
           <div class="col-md-12">
             <div class="button-group filter-button-group text-left">
               <button class="active" data-filter="*">All</button>
-              <button data-filter=".gal_a">Web Development</button>
-              <button data-filter=".gal_b">Python Modules</button>
-              <button data-filter=".gal_c">Machine learning</button>
-              <button data-filter=".gal_c">Publication</button>
+              <button data-filter="Web Development">Web Development</button>
+              <button data-filter="Modules">Modules</button>
+              <button data-filter="Machine learning">Machine learning</button>
+              <button data-filter="Publication">Publication</button>
             </div>
           </div>
         </div>
 
         <div class="row">
-          <div class="col-md-4 col-sm-6 gal_a">
+          {% for pro in product%}
+          <div
+            data-category="{{ pro.project_type }}"
+            class="col-md-4 col-sm-6 item"
+          >
             <div class="post-box fix">
               <div class="post-thumb">
+                {% if item.photo %}
                 <img
-                  src="{% static 'uploads/blog-01.jpg' %}"
+                  src="{{ pro.photo.url }}"
                   class="img-fluid"
                   alt="post-img"
                 />
+                {% endif %}
               </div>
               <div class="post-info">
-                <a href="https://familysooq.com"><h4>Familysooq</h4></a>
-                <p>
-                  Worked for a modern and easy-to-use platform, a marketplace
-                  that is created for Ethiopians that provides buyers and
-                  sellers with an avenue to exchange and trade goods and
-                  services.
-                </p>
+                <a href="{{ pro.link }}"><h4>{{ pro.title }}</h4></a>
+                <p>{{ pro.description }}</p>
               </div>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 gal_b">
-            <div class="post-box fix">
-              <div class="post-thumb">
-                <img
-                  src="{% static 'uploads/blog-01.jpg' %}"
-                  class="img-fluid"
-                  alt="post-img"
-                />
-              </div>
-              <div class="post-info">
-                <a href="https://github.com/Andalus-ICPC"
-                  ><h4>Andalus Online Judge</h4></a
-                >
-                <p>
-                  Andalus Online Judge is an online automated judge for
-                  competitive programming contests and problem-solving. It is
-                  hosted by Adama Science and Technology University to train
-                  students for the ICPC (International Collegiate Programming
-                  Contest).
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 gal_c">
-            <div class="post-box fix">
-              <div class="post-thumb">
-                <img
-                  src="{% static 'uploads/blog-01.jpg' %}"
-                  class="img-fluid"
-                  alt="post-img"
-                />
-              </div>
-              <div class="post-info">
-                <a href="https://pypi.org/project/telebirrweb"
-                  ><h4>telebirrWeb PyPI</h4></a
-                >
-                <p>Telebir Web.</p>
-              </div>
-            </div>
-          </div>
+
+          {% endfor %}
         </div>
       </div>
     </div>
@@ -693,6 +656,7 @@
         <!-- end title -->
 
         <div class="row">
+          {% for post in blog%}
           <div class="col-md-4 col-sm-6 col-lg-4">
             <div class="post-box">
               <div class="post-thumb">
@@ -719,66 +683,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 col-lg-4">
-            <div class="post-box">
-              <div class="post-thumb">
-                <img
-                  src="{% static 'uploads/blog-02.jpg' %}"
-                  class="img-fluid"
-                  alt="post-img"
-                />
-                <div class="date">
-                  <span>06</span>
-                  <span>Aug</span>
-                </div>
-              </div>
-              <div class="post-info">
-                <h4>Quisque auctor lectus interdum nisl accumsan venenatis.</h4>
-                <ul>
-                  <li>by admin</li>
-                  <li>Apr 21, 2018</li>
-                  <li>
-                    <a href="#"><b> Comments</b></a>
-                  </li>
-                </ul>
-                <p>
-                  Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit
-                  amet massa sodales aliquam at eget quam. Integer ultricies et
-                  magna quis.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 col-lg-4">
-            <div class="post-box">
-              <div class="post-thumb">
-                <img
-                  src="{% static 'uploads/blog-03.jpg' %}"
-                  class="img-fluid"
-                  alt="post-img"
-                />
-                <div class="date">
-                  <span>06</span>
-                  <span>Aug</span>
-                </div>
-              </div>
-              <div class="post-info">
-                <h4>Quisque auctor lectus interdum nisl accumsan venenatis.</h4>
-                <ul>
-                  <li>by admin</li>
-                  <li>Apr 21, 2018</li>
-                  <li>
-                    <a href="#"><b> Comments</b></a>
-                  </li>
-                </ul>
-                <p>
-                  Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit
-                  amet massa sodales aliquam at eget quam. Integer ultricies et
-                  magna quis.
-                </p>
-              </div>
-            </div>
-          </div>
+          {% endfor %}
         </div>
       </div>
     </div>
@@ -909,5 +814,26 @@
     <script src="{% static 'js/custom.js' %}"></script>
     <script src="{% static 'js/jquery.vide.js' %}"></script>
     <!-- Contact form JavaScript -->
+    <script>
+      const filterButtons = document.querySelectorAll("[data-filter]");
+      const itemsToFilter = document.querySelectorAll(".item");
+
+      filterButtons.forEach((button) => {
+        button.addEventListener("click", function () {
+          const selectedFilter = this.getAttribute("data-filter");
+
+          itemsToFilter.forEach((item) => {
+            if (
+              selectedFilter === "all" ||
+              item.getAttribute("data-category") === selectedFilter
+            ) {
+              item.style.display = "block";
+            } else {
+              item.style.display = "none";
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>
