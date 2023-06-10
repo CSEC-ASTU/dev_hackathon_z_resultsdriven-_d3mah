@@ -23,15 +23,6 @@
     <meta name="author" content="" />
 
     <!-- Site Icons -->
-    <link
-      rel="shortcut icon"
-      href="{% static 'images/favicon.ico' %}"
-      type="image/x-icon"
-    />
-    <link
-      rel="apple-touch-icon"
-      href="{% static 'images/apple-touch-icon.png' %}"
-    />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
@@ -89,12 +80,26 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger active" href="#home">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About Us</a>
-            </li>
+
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#services"
                 >Achievements</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#stats">Stats</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#Experience"
+                >Experience</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#Education"
+                >Education</a
               >
             </li>
             <li class="nav-item">
@@ -134,20 +139,18 @@
           and enthusiastic mentor."
         </p>
         <div class="footer-social-links">
-          <a href="#" title="Facebook" target="_blank"
-            ><i class="fa fa-facebook"></i
+          <a href="https://github.com/mukerem" title="Facebook" target="_blank"
+            ><i class="fa fa-github"></i
           ></a>
           <a href="#" title="Twitter" target="_blank"
             ><i class="fa fa-twitter"></i
           ></a>
-          <a href="#" title="Google+" target="_blank"
-            ><i class="fa fa-google-plus"></i
-          ></a>
-          <a href="#" title="LinkedIn+" target="_blank"
+
+          <a
+            href="https://www.linkedin.com/in/mukerem-ali-7b1997147/"
+            title="LinkedIn+"
+            target="_blank"
             ><i class="fa fa-linkedin"></i
-          ></a>
-          <a href="#" title="Dribbble" target="_blank"
-            ><i class="fa fa-dribbble"></i
           ></a>
         </div>
         <h3 class="cd-headline clip is-full-width">
@@ -220,7 +223,11 @@
                 learning and dedication to excellence fuel his ongoing success.
               </p>
 
-              <a href="#" class="sim-btn btn-hover-new" data-text="Download CV"
+              <a
+                href="https://drive.google.com/file/d/1CeqK6RvgBFwDIGM1BO2bLgWTMsq0KqJg/view?usp=drive_link"
+                class="sim-btn btn-hover-new"
+                data-text="Download CV"
+                download
                 ><span>Download CV</span></a
               >
             </div>
@@ -280,7 +287,7 @@
     </div>
     <!-- end section -->
 
-    <div class="ds-skills-section section wb">
+    <div id="stats" class="ds-skills-section section wb">
       <div class="container">
         <h3 class="ds-heading">Stats</h3>
         <div class="row">
@@ -304,7 +311,7 @@
       </div>
     </div>
 
-    <div class="ds-skills-section section wb">
+    <div id="skills" class="ds-skills-section section wb">
       <div class="container">
         <div class="row">
           <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
@@ -336,7 +343,7 @@
     <!--  Skills -->
 
     <!-- Experience -->
-    <div class="ds-experience-section section lb">
+    <div id="Experience" class="ds-experience-section section lb">
       <div class="container">
         <h3 class="ds-heading">Work Experience</h3>
         <div class="row ds-experience-list">
@@ -448,7 +455,7 @@
       </div>
     </div>
 
-    <div class="section wb">
+    <div id="Education" class="section wb">
       <div class="container">
         <h2 class="h3 mb-4 ds-heading">Education</h2>
         <div class="timeline">
@@ -491,7 +498,7 @@
         <div class="gallery-menu row">
           <div class="col-md-12">
             <div class="button-group filter-button-group text-left">
-              <button class="active" data-filter="*">All</button>
+              <button class="active" data-filter="all">All</button>
               <button data-filter="Web Development">Web Development</button>
               <button data-filter="Modules">Modules</button>
               <button data-filter="Machine learning">Machine learning</button>
@@ -690,7 +697,7 @@
 
         <div class="row">
           {% for post in blog%}
-          <div class="col-md-4 col-sm-6 col-lg-4">
+          <div class="col-md-4 col-sm-6 col-lg-4 d-flex align-items-stretch">
             <div class="post-box">
               <div class="post-thumb">
                 {% if post.photo %}
@@ -725,8 +732,7 @@
         <div class="section-title text-left">
           <h3>Contact</h3>
           <p>
-            Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis
-            vehicula enim, non aliquam risus.
+             Any Comment
           </p>
         </div>
         <!-- end title -->
