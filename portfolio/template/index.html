@@ -483,6 +483,8 @@
                   class="img-fluid"
                   alt="post-img"
                 />
+                {% else %}
+                <img src="media/index.jpg" class="img-fluid" alt="post-img" />
                 {% endif %}
               </div>
               <div class="post-info">
@@ -660,26 +662,25 @@
           <div class="col-md-4 col-sm-6 col-lg-4">
             <div class="post-box">
               <div class="post-thumb">
+                {% if post.photo %}
                 <img
-                  src="{% static 'uploads/blog-01.jpg' %}"
+                  src="{{ post.photo.url }}"
                   class="img-fluid"
                   alt="post-img"
                 />
+                {% else %}
+                <img src="media/index.jpg" class="img-fluid" alt="post-img" />
+                {% endif %}
                 <div class="date">
-                  <span>06</span>
-                  <span>Aug</span>
+                  <span>{{ post.date }}</span>
                 </div>
               </div>
               <div class="post-info">
-                <h4>Quisque auctor lectus interdum nisl accumsan venenatis.</h4>
-                <ul>
+                <a href="{{post.url }}"> <h4>{{ post.title }}</h4> </a>
+                <!-- <ul>
                   <li class="text-right">Apr 21, 2018</li>
-                </ul>
-                <p>
-                  Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit
-                  amet massa sodales aliquam at eget quam. Integer ultricies et
-                  magna quis.
-                </p>
+                </ul> -->
+                <p>{{ post.description }}</p>
               </div>
             </div>
           </div>

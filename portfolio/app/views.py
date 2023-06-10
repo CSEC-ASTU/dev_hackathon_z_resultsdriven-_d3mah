@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from .models import *
 # Create your views here.
-# from .scrape_medium import *
+from .scrape_medium import *
 
 
 def home(req):

@@ -13,7 +13,8 @@ class Achivement(models.Model):
     title = models.CharField(max_length=150)
     link = models.CharField(max_length=150, blank=True)
     description = models.CharField(max_length=5150)
-    photo = models.ImageField(blank=True, upload_to="Achivement_img")
+    photo = models.ImageField(
+        default="index.jpg", blank=True, upload_to="Achivement_img")
 
     def __str__(self):
         return str(self.title)
@@ -24,7 +25,8 @@ class Project(models.Model):
     title = models.CharField(max_length=150)
     link = models.CharField(max_length=150)
     description = models.CharField(max_length=5150)
-    photo = models.ImageField(blank=True, upload_to="Project_img")
+    photo = models.ImageField(
+        default="index.jpg", blank=True, upload_to="Project_img")
 
     def __str__(self):
         return str(self.title)
@@ -35,7 +37,8 @@ class Testimonials(models.Model):
     user_title = models.CharField(max_length=150)
     title = models.CharField(max_length=150)
     description = models.CharField(max_length=5150)
-    photo = models.ImageField(blank=True, upload_to="Testimonials_img")
+    photo = models.ImageField(
+        default="index.jpg", blank=True, upload_to="Testimonials_img")
 
     def __str__(self):
         return str(self.name)
@@ -47,7 +50,8 @@ class Blog(models.Model):
     url = models.CharField(blank=True, max_length=150)
     title = models.CharField(max_length=150)
     description = models.CharField(max_length=5150)
-    photo = models.ImageField(blank=True, upload_to="Project_img")
+    photo = models.ImageField(
+        default="index.jpg", blank=True, upload_to="Project_img")
 
     def __str__(self):
         return str(self.title)

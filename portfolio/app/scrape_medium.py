@@ -5,8 +5,8 @@ from .models import *
 
 
 def scrape_medium_user_blog():
-    # url = 'https://medium.com/@mukeremali112'
-    url = 'https://medium.com/@cole_ruche'
+    url = 'https://medium.com/@mukeremali112'
+    # url = 'https://medium.com/@cole_ruche'
 
     # Send a GET request to the Medium user's profile page
     response = requests.get(url)
@@ -36,4 +36,4 @@ def scrape_medium_user_blog():
     return None
 
 
-scrape_medium_user_blog()
+# scrape_medium_user_blog()
