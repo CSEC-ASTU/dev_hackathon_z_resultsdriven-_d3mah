@@ -136,6 +136,11 @@
  		margin-bottom: 10px;
  		font-size: 14px;
  	}
+ 	.ds-skills-list1 li {
+ 		margin-right: 10px;
+ 		margin-bottom: 10px;
+ 		font-size: 14px;
+ 	}
 
  	.ds-skills-section .col-12,
  	.ds-experience-list .col-12 {
@@ -227,3 +232,14 @@
  html {
  	scroll-behavior: smooth;
  }
+
+
+
+
+
+
+
+
+
+
+ 

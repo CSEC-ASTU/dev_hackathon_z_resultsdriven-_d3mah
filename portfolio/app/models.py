@@ -65,3 +65,13 @@ class Contact(models.Model):
 
     def __str__(self):
         return str(self.name)
+
+
+class Stats(models.Model):
+    rank = models.CharField(max_length=150, blank=True)
+    name = models.CharField(max_length=150, blank=True, default="Mukerem Ali")
+    site = models.CharField(max_length=50, blank=True)
+    score = models.CharField(max_length=50, blank=True)
+
+    def __str__(self):
+        return str(self.site)
