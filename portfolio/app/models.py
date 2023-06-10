@@ -55,3 +55,13 @@ class Blog(models.Model):
 
     def __str__(self):
         return str(self.title)
+
+
+class Contact(models.Model):
+    phone = models.CharField(max_length=150)
+    name = models.CharField(max_length=150)
+    email = models.CharField(max_length=150)
+    message = models.CharField(max_length=5150)
+
+    def __str__(self):
+        return str(self.name)

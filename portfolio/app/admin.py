@@ -4,7 +4,7 @@ from django.contrib import admin
 from .models import *
 
 
-@admin.register(Achivement, Project, Testimonials, Blog)
+@admin.register(Achivement, Project, Testimonials, Blog, Contact)
 class AuthorAdmin(admin.ModelAdmin):
     def get_list_display(self, request):
         return [field.name for field in self.model._meta.concrete_fields]
